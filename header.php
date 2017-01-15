@@ -17,6 +17,8 @@
 
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:700|Nunito+Sans:400,600" rel="stylesheet">
     
     <!--wordpress head-->
     <?php wp_head(); ?>
@@ -25,9 +27,6 @@
     <!--[if lt IE 8]>
       <p class="ancient-browser-alert">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a>.</p>
     <![endif]-->
-    
-    
-    
     
     
     <div class="container page-container">
@@ -54,17 +53,19 @@
         </div><!--.main-navigation-->
 
         <div class="row row-with-vspace site-branding">
-          <div class="col-md-6 site-title">
+          <div class="col-md-6 col-md-offset-3 site-title">
             <h1 class="site-title-heading">
-              <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
+              <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home" alt="<?php bloginfo('name'); ?>" class="logo">
+                <img src="<?php echo get_template_directory_uri() ?>/img/logo@2x.png" />
+              </a>
             </h1>
+          </div>
+          <div class="col-md-3 page-header-top-right">
             <div class="site-description">
               <small>
                 <?php bloginfo('description'); ?> 
               </small>
             </div>
-          </div>
-          <div class="col-md-6 page-header-top-right">
             <div class="sr-only">
               <a href="#content" title="<?php esc_attr_e('Skip to content', 'bootstrap-basic'); ?>"><?php _e('Skip to content', 'bootstrap-basic'); ?></a>
             </div>
