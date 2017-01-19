@@ -203,3 +203,17 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/widgets/BootstrapBasicSearchWidget.php';
 require get_template_directory() . '/inc/template-widgets-hook.php';
 
+
+function print_page_title( ){
+   return get_the_title();
+}
+add_shortcode( 'page_title', 'print_page_title' );
+
+function wpb_hidetitle_class($classes) {
+    if ( is_single() || is_page() ) : 
+    $classes[] = 'hide-title';
+    return $classes;
+    endif; 
+    return $classes;
+}
+add_filter('post_class', 'wpb_hidetitle_class');

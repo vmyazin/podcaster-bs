@@ -31,9 +31,10 @@
     
     <div class="container page-container">
       <?php do_action('before'); ?> 
-      <header role="banner">
+      <header role="banner" class="main-header">
         <div class="row main-navigation">
           <div class="col-md-12">
+          <?php /*
             <nav class="navbar navbar-default" role="navigation">
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
@@ -49,19 +50,20 @@
                 <?php dynamic_sidebar('navbar-right'); ?> 
               </div><!--.navbar-collapse-->
             </nav>
+          */ ?>
           </div>
         </div><!--.main-navigation-->
 
         <div class="row row-with-vspace site-branding">
-          <div class="col-md-6 col-md-offset-3 site-title">
+          <div class="col-md-4 col-md-offset-4 site-title">
             <h1 class="site-title-heading">
               <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home" alt="<?php bloginfo('name'); ?>" class="logo">
-                <img src="<?php echo get_template_directory_uri() ?>/img/logo@2x.png" />
+                <img src="<?php echo get_template_directory_uri() ?>/img/EJP-Logo.svg" />
               </a>
             </h1>
           </div>
-          <div class="col-md-3 page-header-top-right">
-            <div class="site-description">
+          <div class="col-md-4 page-header-top-right">
+            <div class="site-description text-center">
               <small>
                 <?php bloginfo('description'); ?> 
               </small>
