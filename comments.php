@@ -90,7 +90,7 @@ if (post_password_required()) {
 	ob_start();
 	comment_form(
 		array(
-			'class_submit' => 'btn btn-primary',
+			'class_submit' => 'btn btn-secondary',
 			'fields' => array(
 				'author' => '<div class="form-group">' . 
 							'<label class="control-label col-md-2" for="author">' . __('Name', 'bootstrap-basic') . ($req ? ' <span class="required">*</span>' : '') . '</label> ' .
@@ -117,7 +117,7 @@ if (post_password_required()) {
 							'<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" class="form-control"></textarea>' . 
 							'</div>' . 
 							'</div>',
-			'comment_notes_after' => '<p class="help-block">' . 
+			'comment_notes_after' => '<p class="help-block hide">' . 
 							sprintf(__('You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes: %s', 'bootstrap-basic'), $comment_allowed_tags) . 
 							'</p>'
 		)

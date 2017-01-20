@@ -3,11 +3,16 @@ body {
   font: 400 16px 'Nunito Sans', sans-serif;
   line-height: 1.5;
 }
+a {
+  color: #747474;
+  text-decoration: underline;
+}
 h1, h2, h3 {
   font-family: 'Archivo Narrow', sans-serif;
 }
 h1 a {
   color: #484848;
+  text-decoration: none;
 }
 .main-header {
   border-bottom: 1px dashed #979797;
@@ -60,12 +65,19 @@ h1 a {
 #sidebar-left aside.widget.widget_recent_entries ul li, #sidebar-right aside.widget.widget_recent_entries ul li {
   list-style: none;
 }
-#sidebar-left .widget h1.widget-title, #sidebar-right .widget h1.widget-title, .podcaster-meta {
+#sidebar-left .widget h1.widget-title, #sidebar-right .widget h1.widget-title, .podcaster-meta, .comment-reply-title {
   color: #979797;
   font-size: 12px;
   font-family: 'Nunito Sans', sans-serif;
   text-transform: uppercase;
   font-weight: 300;
+}
+.comment-total {
+  font-size: 12px;
+  padding-left: 8px;
+}
+.form-submit {
+  text-align: center;
 }
 .site-footer {
   background: #f5f5f5;

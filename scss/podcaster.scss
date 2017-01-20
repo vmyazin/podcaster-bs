@@ -1,4 +1,5 @@
 $light-grey: #979797;
+$med-grey: #747474;
 $font-family-1: 'Nunito Sans', sans-serif;
 $font-family-2: 'Archivo Narrow', sans-serif;
 
@@ -8,12 +9,18 @@ body {
   line-height: 1.5;
 }
 
+a {
+  color: $med-grey;
+  text-decoration: underline;
+}
+
 h1, h2, h3 {
   font-family: $font-family-2;
 }
 h1 {
   a {
     color: #484848;
+    text-decoration: none;
   }
 }
 
@@ -77,7 +84,7 @@ h1 {
     margin: 0;
     &.page_in_widget {
       p {
-        color: #747474;
+        color: $med-grey;
         font-weight: bold;
       }
     }
@@ -94,7 +101,8 @@ h1 {
 
 #sidebar-left .widget h1.widget-title,
 #sidebar-right .widget h1.widget-title,
-.podcaster-meta {
+.podcaster-meta,
+.comment-reply-title {
   color: $light-grey;
   font-size: 12px;
   font-family: $font-family-1;
@@ -102,7 +110,13 @@ h1 {
   font-weight: 300;
 }
 
-
+.comment-total {
+  font-size: 12px;
+  padding-left: 8px;
+}
+.form-submit {
+  text-align: center;
+}
 
 .site-footer {
   background: #f5f5f5;
