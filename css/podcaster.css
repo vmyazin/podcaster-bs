@@ -1,6 +1,7 @@
 body {
   background: #f7f7f7;
   font: 400 16px 'Nunito Sans', sans-serif;
+  line-height: 1.5;
 }
 h1, h2, h3 {
   font-family: 'Archivo Narrow', sans-serif;
@@ -27,14 +28,44 @@ h1 a {
   display: inline-block;
 }
 .logo img {
-  width: 200px;
+  width: 240px;
 }
 #main-column .post .entry-header .entry-meta {
   text-transform: uppercase;
   font-size: 12px;
 }
+.entry-header .podcaster-meta {
+  padding: 30px 0 0;
+}
+.entry-content .podcaster-meta {
+  padding: 20px 0 0;
+  margin: 0;
+}
 .player-wrapper {
-  margin: 20px 0;
+  margin: 10px 0 20px 0;
+}
+#sidebar-left aside.widget, #sidebar-right aside.widget {
+  border: 0;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 20px 10px;
+  margin: 0;
+}
+#sidebar-left aside.widget.page_in_widget p, #sidebar-right aside.widget.page_in_widget p {
+  color: #747474;
+  font-weight: bold;
+}
+#sidebar-left aside.widget.widget_recent_entries ul, #sidebar-right aside.widget.widget_recent_entries ul {
+  padding-left: 0;
+}
+#sidebar-left aside.widget.widget_recent_entries ul li, #sidebar-right aside.widget.widget_recent_entries ul li {
+  list-style: none;
+}
+#sidebar-left .widget h1.widget-title, #sidebar-right .widget h1.widget-title, .podcaster-meta {
+  color: #979797;
+  font-size: 12px;
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 .site-footer {
   background: #f5f5f5;

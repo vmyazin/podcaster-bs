@@ -68,7 +68,7 @@
           <div class="col-md-4 col-md-offset-4 site-title">
             <h1 class="site-title-heading">
               <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home" alt="<?php bloginfo('name'); ?>" class="logo">
-                <img src="<?php echo get_template_directory_uri() ?>/img/EJP-Logo.svg" />
+                <img src="<?php echo get_template_directory_uri() ?>/img/EJP-Logo-b.svg" />
               </a>
             </h1>
           </div>
