@@ -18,8 +18,20 @@ h1 {
   border-bottom: 1px dashed $light-grey;
 }
 
+.site-branding {
+  margin-bottom: 30px;
+}
+
+.site-description {
+  color: $light-grey;
+}
+
 .site-title-heading {
   text-align: center;
+}
+
+.site-content {
+  margin-top: 20px;
 }
 
 .logo {
@@ -44,6 +56,6 @@ h1 {
 .site-footer {
   background: #f5f5f5;
   font-size: 12px;
-  padding: 10px;
-  color: #979797;
+  padding: 10px 0;
+  color: $light-grey;
 }

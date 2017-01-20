@@ -11,8 +11,17 @@ h1 a {
 .main-header {
   border-bottom: 1px dashed #979797;
 }
+.site-branding {
+  margin-bottom: 30px;
+}
+.site-description {
+  color: #979797;
+}
 .site-title-heading {
   text-align: center;
+}
+.site-content {
+  margin-top: 20px;
 }
 .logo {
   display: inline-block;
@@ -30,6 +39,6 @@ h1 a {
 .site-footer {
   background: #f5f5f5;
   font-size: 12px;
-  padding: 10px;
+  padding: 10px 0;
   color: #979797;
 }
