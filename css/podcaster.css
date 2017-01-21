@@ -14,6 +14,10 @@ h1 a {
   color: #484848;
   text-decoration: none;
 }
+.btn {
+  border-radius: 2px;
+  font-weight: bold;
+}
 .main-header {
   border-bottom: 1px dashed #979797;
 }
