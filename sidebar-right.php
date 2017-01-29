@@ -18,7 +18,7 @@
                 </a>
               </li>
               <li>
-                <a href="<?php echo site_url(); ?>/podcast/feed">
+                <a href="<?php echo site_url(); ?>/feed/mp3/">
                   <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-rss.svg" />
                   RSS
                 </a>
