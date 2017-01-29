@@ -10,9 +10,9 @@
     </div>
 
     <?php if ('post' == get_post_type()) { ?> 
-    <div class="entry-meta">
+    <?php /* <div class="entry-meta">
       <?php bootstrapBasicPostOn(); ?> 
-    </div><!-- .entry-meta -->
+    </div><!-- .entry-meta --> */ ?>
     <?php } //endif; ?> 
   </header><!-- .entry-header -->
 
