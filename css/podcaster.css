@@ -2,6 +2,7 @@ body {
   background: #f7f7f7;
   font: 400 16px 'Nunito Sans', sans-serif;
   line-height: 1.5;
+  color: #454545;
 }
 a {
   color: #747474;
@@ -43,8 +44,20 @@ h1 a {
   text-transform: uppercase;
   font-size: 12px;
 }
+#main-column .site-main .post, #main-column .site-main .page {
+  border: none;
+  padding: 0;
+}
 .entry-header .podcaster-meta {
   padding: 30px 0 0;
+}
+.entry-meta-category-tag {
+  padding: 0 0 20px;
+}
+.entry-content {
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  border-bottom: 1px dashed #979797;
 }
 .entry-content .podcaster-meta {
   padding: 20px 0 0;
@@ -60,6 +73,10 @@ h1 a {
   .entry-header .podcaster-meta {
     padding-top: 0;
   }
+}
+p.question {
+  font-weight: 700;
+  color: #222;
 }
 #sidebar-right {
   padding-top: 12.9px;

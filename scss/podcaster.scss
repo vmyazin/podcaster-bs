@@ -7,6 +7,7 @@ body {
   background: #f7f7f7;
   font: 400 16px $font-family-1;
   line-height: 1.5;
+  color: #454545;
 }
 
 a {
@@ -57,9 +58,21 @@ h1 {
 }
 
 #main-column {
-  .post .entry-header .entry-meta {
-    text-transform: uppercase;
-    font-size: 12px;
+  .post {
+    .entry-header .entry-meta {
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+  }
+}
+
+#main-column {
+  .site-main {
+    .post,
+    .page {
+      border: none;
+      padding: 0;
+    }
   }
 }
 
@@ -69,7 +82,14 @@ h1 {
   }
 }
 
+.entry-meta-category-tag {
+  padding: 0 0 20px;
+}
+
 .entry-content {
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  border-bottom: 1px dashed #979797;
   .podcaster-meta {
     padding: 20px 0 0;
     margin: 0;
@@ -91,6 +111,11 @@ h1 {
         padding-top: 0;
       }
     }
+}
+
+p.question {
+  font-weight: 700;
+  color: #222;
 }
 
 #sidebar-right {

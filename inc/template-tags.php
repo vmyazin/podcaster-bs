@@ -130,8 +130,8 @@ if (!function_exists('bootstrapBasicCommentsPopupLink')) {
 	 */
 	function bootstrapBasicCommentsPopupLink() 
 	{
-		$comment_icon = '<span class="comment-icon glyphicon glyphicon-comment"><small class="comment-total">%d</small></span>';
-		$comments_icon = '<span class="comment-icon glyphicon glyphicon-comment"><small class="comment-total">%s</small></span>';
+		$comment_icon = '<span class="comment-icon glyphicon glyphicon-comment"></span><small class="comment-total">%d</small>';
+		$comments_icon = '<span class="comment-icon glyphicon glyphicon-comment"></span><small class="comment-total">%s</small>';
 		return comments_popup_link(sprintf($comment_icon, ''), sprintf($comment_icon, '1'), sprintf($comments_icon, '%'), 'btn btn-default btn-xs');
 	}// bootstrapBasicCommentsPopupLink
 }
