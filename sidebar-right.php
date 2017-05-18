@@ -8,19 +8,19 @@
               <li>
                 <a href="https://overcast.fm">
                   <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-overcast.svg" />
-                  Overcast
+                  <p>Overcast</p>
                 </a>
               </li>
               <li>
                 <a href="http://www.itunes.com">
                   <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-itunes.svg" />
-                  iTunes
+                  <p>iTunes</p>
                 </a>
               </li>
               <li>
                 <a href="<?php echo site_url(); ?>/feed/mp3/">
                   <img src="<?php echo get_template_directory_uri() ?>/img/icons/icon-rss.svg" />
-                  RSS
+                  <p>RSS</p>
                 </a>
               </li>
             </ul>
