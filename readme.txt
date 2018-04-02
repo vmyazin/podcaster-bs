@@ -1,6 +1,8 @@
-===Bootstrap Basic===
+==Podcasting Website Based on Bootstrap Basic==
+
 Author: Vee Winch
 Author URI: http://rundiz.com
+Custom Theme Author: Vasily Myazin
 Description: Bootstrap v.3 basic theme. For build new theme based on Bootstrap.
 Text Domain: bootstrap-basic
 Domain Path: /languages/
@@ -22,7 +24,7 @@ Bootstrap Basic is based on the _s (Underscores) starter theme by Automattic Inc
 
 Bootstrap v.3 basic theme. For build new theme based on Bootstrap.
 
-==More feature==
+==More features==
 
 WordPress Menu
 To display menu correctly, please create at least 1 menu and set as primary and save.
