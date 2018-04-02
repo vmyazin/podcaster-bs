@@ -12,7 +12,14 @@ get_header();
  */
 $main_column_size = bootstrapBasicGetMainColumnSize();
 ?>
+
+<?php
+	include(TEMPLATEPATH . '/latest-episodes.php');
+?>
+
 <?php get_sidebar('left'); ?> 
+
+			<div class="row">
 				<div class="col-md-<?php echo $main_column_size; ?> content-area" id="main-column">
 					<main id="main" class="site-main" role="main">
 						<?php if (have_posts()) { ?> 
@@ -36,4 +43,5 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 					</main>
 				</div>
 <?php get_sidebar('right'); ?> 
+			</div>
 <?php get_footer(); ?> 

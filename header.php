@@ -43,8 +43,8 @@
     
     <div class="container page-container">
       <?php do_action('before'); ?> 
-      <header role="banner" class="main-header">
-        <div class="row main-navigation">
+      <header role="banner" class="row main-header">
+        <div class="main-navigation">
           <div class="col-md-12">
           <?php /*
             <nav class="navbar navbar-default" role="navigation">

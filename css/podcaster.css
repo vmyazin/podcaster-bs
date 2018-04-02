@@ -19,6 +19,9 @@ h1 a {
   border-radius: 2px;
   font-weight: bold;
 }
+hr.dashed {
+  border-bottom: 1px dashed #979797;
+}
 .main-header {
   border-bottom: 1px dashed #979797;
 }
@@ -146,6 +149,40 @@ p.question {
 }
 #content .widget .subscribe-links li a:hover img {
   opacity: 0.8;
+}
+.latest-episodes {
+  margin-bottom: 30px;
+}
+.latest-episodes h2 {
+  margin-bottom: 20px;
+}
+.mini-episode {
+  position: relative;
+}
+.mini-episode .badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #dd3d3d;
+  font-size: 15px;
+  height: 31px;
+  line-height: 27px;
+}
+.mini-episode a {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: #484848;
+  font-weight: 600;
+}
+.latest-ep-avatar {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.latest-ep-avatar img {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
 }
 .site-footer {
   background: #f5f5f5;

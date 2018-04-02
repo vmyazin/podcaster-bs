@@ -24,6 +24,9 @@ h1 {
     text-decoration: none;
   }
 }
+hr.dashed {
+  border-bottom: 1px dashed $light-grey;
+}
 
 .btn {
   border-radius: 2px;
@@ -208,6 +211,26 @@ p.question {
       }
     }
   }
+}
+
+.latest-episodes {
+  margin-bottom: 50px;
+}
+.latest-episodes h2 {
+  margin-bottom: 20px;
+}
+.mini-episode {
+  position: relative;
+}
+.mini-episode .badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.latest-ep-avatar img {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
 }
 
 .site-footer {
