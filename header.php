@@ -15,6 +15,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
 
+	<!-- Pinterest -->
+	<meta name="p:domain_verify" content="9a5341658aa049243b3cc7e9f569ec93"/>
     
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() ?>/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri() ?>/img/favicons/favicon-32x32.png" sizes="32x32">
@@ -68,12 +70,12 @@
           <div class="col-md-4 col-md-offset-4 site-title">
             <h1 class="site-title-heading">
               <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home" alt="<?php bloginfo('name'); ?>" class="logo">
-                <img src="<?php echo get_template_directory_uri() ?>/img/EJP-Logo-b.svg" />
+                <img src="<?php echo get_template_directory_uri() ?>/img/EJP-logo-c.svg" />
               </a>
             </h1>
           </div>
           <div class="col-md-4 page-header-top-right">
-            <div class="site-description text-center">
+            <div class="site-description">
               <small>
                 <?php bloginfo('description'); ?> 
               </small>
