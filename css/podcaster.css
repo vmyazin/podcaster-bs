@@ -173,9 +173,12 @@ p.question {
 .latest-episodes h2 {
   margin-bottom: 20px;
 }
+
 .mini-episode {
   position: relative;
+  height: 240px;
 }
+
 .mini-episode .badge {
   position: absolute;
   top: 0;
@@ -191,6 +194,7 @@ p.question {
   display: inline-block;
   color: #484848;
   font-weight: 600;
+  line-height: 1.2;
 }
 .latest-ep-avatar {
   text-align: center;
