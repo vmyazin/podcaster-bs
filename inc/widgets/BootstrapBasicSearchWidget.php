@@ -98,7 +98,7 @@ if (!class_exists('BootstrapBasicSearchWidget')) {
 			$output .= '<input type="text" name="s" class="form-control" placeholder="' . esc_attr_x('Search &hellip;', 'placeholder', 'bootstrap-basic') . '" value="' . esc_attr(get_search_query()) . '" title="' . esc_attr_x('Search for:', 'label', 'bootstrap-basic') . '">';
 			$output .= '</div>';
 			$output .= ' ';
-			$output .= '<button type="submit" class="btn btn-default">' . esc_html__('Search', 'bootstrap-basic') . '</button>';
+			$output .= '<button type="submit" class="btn btn-danger">' . esc_html__('Search', 'bootstrap-basic') . '</button>';
 			$output .= '</form>';
 
 			$output .= $args['after_widget'];

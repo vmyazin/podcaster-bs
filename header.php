@@ -66,33 +66,35 @@
           </div>
         </div><!--.main-navigation-->
 
-        <div class="row row-with-vspace site-branding">
-          <div class="col-md-4 col-md-offset-4 site-title">
-            <h1 class="site-title-heading">
-              <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home" alt="<?php bloginfo('name'); ?>" class="logo">
-                <img src="<?php echo get_template_directory_uri() ?>/img/EJP-logo-c.svg" />
-              </a>
-            </h1>
-          </div>
-          <div class="col-md-4 page-header-top-right">
-            <div class="site-description">
-              <small>
-                <?php bloginfo('description'); ?> 
-              </small>
+        <div class="container-fluid">
+          <div class="row row-with-vspace site-branding">
+            <div class="col-md-4 offset-md-4 site-title">
+              <h1 class="site-title-heading">
+                <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home" alt="<?php bloginfo('name'); ?>" class="logo">
+                  <img src="<?php echo get_template_directory_uri() ?>/img/EJP-logo-c.svg" />
+                </a>
+              </h1>
             </div>
-            <div class="sr-only">
-              <a href="#content" title="<?php esc_attr_e('Skip to content', 'bootstrap-basic'); ?>"><?php _e('Skip to content', 'bootstrap-basic'); ?></a>
+            <div class="col-md-4 col-sm-12 page-header-top-right">
+              <div class="site-description text-center text-md-right">
+                <small>
+                  <?php bloginfo('description'); ?> 
+                </small>
+              </div>
+              <div class="sr-only">
+                <a href="#content" title="<?php esc_attr_e('Skip to content', 'bootstrap-basic'); ?>"><?php _e('Skip to content', 'bootstrap-basic'); ?></a>
+              </div>
+              <?php if (is_active_sidebar('header-right')) { ?> 
+              <div class="pull-right">
+                <?php dynamic_sidebar('header-right'); ?> 
+              </div>
+              <div class="clearfix"></div>
+              <?php } // endif; ?> 
             </div>
-            <?php if (is_active_sidebar('header-right')) { ?> 
-            <div class="pull-right">
-              <?php dynamic_sidebar('header-right'); ?> 
-            </div>
-            <div class="clearfix"></div>
-            <?php } // endif; ?> 
-          </div>
-        </div><!--.site-branding-->
+          </div><!--.site-branding-->
+        </div>
         
       </header>
       
       
-      <div id="content" class="row row-with-vspace site-content">
+      <div id="content" class="row-with-vspace site-content">

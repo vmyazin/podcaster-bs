@@ -1,7 +1,9 @@
 <div class="container">
+  <div class="row">
+    <h2 class="mb-4">Latest Episodes</h2>
+  </div>
   <div class="row latest-episodes">
 
-    <h2>Latest Episodes</h2>
 <?php
   $args = array(
     'numberposts' => 6
@@ -20,7 +22,7 @@
       } else {
         $image = '';
       }
-      echo '<div class="col-md-2 col-sm-3 col-xs-4 mini-episode"><div class="latest-ep-avatar"><img src="' . $image[0] .'"></div><span class="badge">#' . get_custom_field('episode_number', $recent["ID"]).'</span><a href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"].'</a> </div> ';
+      echo '<div class="col-lg-2 col-md-3 col-sm-4 col-6 mini-episode"><div class="latest-ep-avatar"><img src="' . $image[0] .'"></div><span class="badge">#' . get_custom_field('episode_number', $recent["ID"]).'</span><a href="' . get_permalink($recent["ID"]) . '">' . $recent["post_title"].'</a> </div> ';
     }
   wp_reset_query();
 ?>   

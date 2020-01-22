@@ -90,7 +90,7 @@ if (post_password_required()) {
 	ob_start();
 	comment_form(
 		array(
-			'class_submit' => 'btn btn-default',
+			'class_submit' => 'btn btn-danger',
 			'fields' => array(
 				'author' => '<div class="form-group">' . 
 							'<label class="control-label col-md-2" for="author">' . __('Name', 'bootstrap-basic') . ($req ? ' <span class="required">*</span>' : '') . '</label> ' .

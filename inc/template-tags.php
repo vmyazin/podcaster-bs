@@ -130,9 +130,9 @@ if (!function_exists('bootstrapBasicCommentsPopupLink')) {
 	 */
 	function bootstrapBasicCommentsPopupLink() 
 	{
-		$comment_icon = '<span class="comment-icon glyphicon glyphicon-comment"></span><small class="comment-total">%d</small>';
-		$comments_icon = '<span class="comment-icon glyphicon glyphicon-comment"></span><small class="comment-total">%s</small>';
-		return comments_popup_link(sprintf($comment_icon, ''), sprintf($comment_icon, '1'), sprintf($comments_icon, '%'), 'btn btn-default btn-xs');
+		$comment_icon = '<i class="fas fa-comment"></i><small class="comment-total">%d</small>';
+		$comments_icon = '<i class="fas fa-comment"></i><small class="comment-total">%s</small>';
+		return comments_popup_link(sprintf($comment_icon, ''), sprintf($comment_icon, '1'), sprintf($comments_icon, '%'), 'btn btn-danger btn-xs');
 	}// bootstrapBasicCommentsPopupLink
 }
 
@@ -145,7 +145,7 @@ if (!function_exists('bootstrapBasicEditPostLink')) {
 	{
 		$edit_post_link = get_edit_post_link();
 		if ($edit_post_link != null) {
-		    $edit_btn = '<a class="post-edit-link btn btn-default btn-xs" href="'.$edit_post_link.'" title="' . __('Edit', 'bootstrap-basic') . '"><i class="edit-post-icon glyphicon glyphicon-pencil" title="' . __('Edit', 'bootstrap-basic') . '"></i></a>';
+		    $edit_btn = '<a class="post-edit-link btn btn-danger btn-xs" href="'.$edit_post_link.'" title="' . __('Edit', 'bootstrap-basic') . '"><i class="edit-post-icon glyphicon glyphicon-pencil" title="' . __('Edit', 'bootstrap-basic') . '"></i></a>';
 		    unset($edit_post_link);
 		    echo $edit_btn;
 		}
@@ -167,7 +167,7 @@ if (!function_exists('bootstrapBasicFullPageSearchForm')) {
 		$output .= '<input type="text" name="s" value="' . esc_attr(get_search_query()) . '" placeholder="' . esc_attr_x('Search &hellip;', 'placeholder', 'bootstrap-basic') . '" title="' . esc_attr_x('Search &hellip;', 'label', 'bootstrap-basic') . '" class="form-control" />';
 		$output .= '</div>';
 		$output .= '<div class="col-xs-2">';
-		$output .= '<button type="submit" class="btn btn-default">' . __('Search', 'bootstrap-basic') . '</button>';
+		$output .= '<button type="submit" class="btn btn-danger">' . __('Search', 'bootstrap-basic') . '</button>';
 		$output .= '</div>';
 		$output .= '</div>';
 		$output .= '</form>';
